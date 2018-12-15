@@ -1,0 +1,26 @@
+<?php 
+
+
+if($this->getEnable()){
+$rightImageWidth = $this->getRightImageWidth();
+$leftImageWidth = $this->getLeftImageWidth();
+$pageMaxWidth = $this->getPageMaxWidth();
+	echo '<div class="left-img"><a href="'.$this->getLeftImageUrl().'"><img width="'.$leftImageWidth.'" src="'.$this->getMediaUrl().'background/'.$this->getLeftImageSrc().'"></a></div>';
+	echo '<div class="right-img"><a href="'.$this->getRightImageUrl().'"><img width="'.$rightImageWidth.'"src="'.$this->getMediaUrl().'background/'.$this->getRightImageSrc().'"></a></div>';
+
+?>
+<style type="text/css">
+.left-img {
+	position: absolute;
+	top: 0;
+	left: calc(50% - <?php echo (($pageMaxWidth/2)+$leftImageWidth);?>px);
+}
+.right-img {
+	position: absolute;
+	top: 0;
+	right: calc(50% - <?php echo (($pageMaxWidth/2)+$rightImageWidth);?>px);
+}
+</style>
+<?php 
+}
+

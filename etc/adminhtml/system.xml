@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="backimages" translate="label" sortOrder="130" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Back Images</label>
+            <tab>general</tab>
+            <resource>Godogi_BackImages::backimages_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Back Images</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="left_image_src" translate="label comment" type="image" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Select Left Image</label>
+                    <backend_model>Godogi\BackImages\Model\Config\Backend\Image</backend_model>
+                    <base_url type="media" scope_info="1">background</base_url>
+                </field>
+                <field id="left_image_url" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Left URL</label>
+                </field>
+                <field id="left_image_width" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Left Image Width</label>
+                    <comment><![CDATA[Add image width in px, for example: 300 (that means 300px)]]></comment>
+                </field>
+                <field id="right_image_src" translate="label comment" type="image" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Select Right Image</label>
+                    <backend_model>Godogi\BackImages\Model\Config\Backend\Image</backend_model>
+                    <base_url type="media" scope_info="1">background</base_url>
+                </field>
+                <field id="right_image_url" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Right URL</label>
+                </field>
+                <field id="right_image_width" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Left Image Width</label>
+                    <comment><![CDATA[Add image width in px, for example: 300 (that means 300px)]]></comment>
+                </field>
+                <field id="page_max_width" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Page Max Width</label>
+                    <comment><![CDATA[Add width in px, for example: 1200 (that means 1200px)]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
