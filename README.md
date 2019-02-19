@@ -15,8 +15,6 @@ Float Left Right Advertising for Magento 2
 
 4. bin/magento setup:di:compile
 
-If using OpCache, please clear cache.
-
 
 ## Compatibility
 
