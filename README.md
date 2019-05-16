@@ -2,8 +2,6 @@
 
 Float Left Right Advertising for Magento 2
 
-![](preview.gif)
-
 
 ## Install
 
